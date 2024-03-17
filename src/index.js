@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+/* Esto es un cambio */
+
 app.post('/crear', async (req, res) => {
   const { nombre, cedula, apellido } = req.body
 
